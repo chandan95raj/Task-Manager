@@ -3,41 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Manager</title>
-    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="logo" id="abc">
-        <img
-          src="https://i.pinimg.com/originals/82/c6/5b/82c65b9bb0a75026fc4c82a438b4cc9b.jpg"
-          alt="Logo"
-        />
-      </div>
-      <div>
-        <h1 class="title">Task Manager</h1>
-      </div>
-    </header>
+    <div class="inputs">
+      <input type="text" id="id" />
+      <input type="text" id="title" />
+      <input type="text" id="desc" />
+      <input type="date" id="date" />
+      <button onclick="readInput()">Add Task</button>
+    </div>
 
-    <main>
-      <div>
-        <!-- to take user input -->
-        <input type="text" class="searchBox" />
-        <button id="createTask">Create Task</button>
-      </div>
-      <div class="tasks">
-        <table>
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Title</th>
-              <th>Description</th>
-              <th>Create Date</th>
-              <th>Operations</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-    </main>
+    <div class="">
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Desc</th>
+            <th>Date</th>
+            <th>Operations</th>
+          </tr>
+        </thead>
+        <tbody id="items">         
+        </tbody>
+      </table>
+    </div>
+    <script src="javascript/index.js"></script>
   </body>
 </html>
